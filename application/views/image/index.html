@@ -1,12 +1,13 @@
-<html>
-    <head><META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset="utf8"></head>
-    <body>
-        <form name="Upload" ENCTYPE="multipart/form-data" action="/" method="post">
-            Выберете файл: <input name="image" type="file">
-            <input type="submit" value="Загрузка">
-        </form>
-        {% if next != '' %}
-        <a href="/image/crop/">Дальше</a>
-        {% endif %}
-    </body>
-</html> 
+{% extends 'base.html' %}
+{% block head %}
+
+{% endblock %}
+{% block content %}
+<form name="Upload" ENCTYPE="multipart/form-data" action="/" method="post">
+    Выберете файл: <input name="image" type="file">
+    <input type="submit" value="Загрузка">
+</form>
+{% if next != '' %}
+    <a href="/image/crop/">Дальше</a>
+{% endif %}
+{% endblock %}

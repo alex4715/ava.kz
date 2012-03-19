@@ -1,5 +1,8 @@
-<html>
-    <body>
+{% extends 'base.html' %}
+{% block head %}
+
+{% endblock %}
+{% block content %}
         <form action="/image/crop/" method="post">
             X1 <input name="x1" type="text"><br>
             X2 <input name="x2" type="text"><br>
@@ -19,5 +22,4 @@
         {% else %}
             <a href="/image/edit/">Дальше</a>
         {% endif %}
-    </body>
-</html> 
+{% endblock %}
