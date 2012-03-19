@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <form action="/image/crop/" method="post">
+            X1 <input name="x1" type="text"><br>
+            X2 <input name="x2" type="text"><br>
+            y1 <input name="y1" type="text"><br>
+            y2 <input name="y2" type="text"><br>
+            flip_hor <br>
+                Yes <input name="h" id="h" value="17" type="radio">
+                No  <input name="h" id="h" value="0" type="radio"><br>
+            flip_gor <br>
+                Yes <input name="g" id="g" value="18" type="radio">
+                No  <input name="g" id="g" value="0" type="radio"><br>
+            rotate <input name="r" type="text"><br>
+            <input type="submit" value="Отправить">
+        </form>
+        {% if image != '' %}
+            <img src="/{{image}}">
+        {% else %}
+            <a href="/image/edit/">Дальше</a>
+        {% endif %}
+    </body>
+</html> 

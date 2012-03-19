@@ -1,0 +1,17 @@
+<html>
+    <head><META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset="utf8"></head>
+    <head><script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script>
+      $(function(){
+          $("#div").click(function(){
+            $('#img').replaceWith('<img id="img" src="/image/flyimg/1">');
+          });
+      });
+        
+    </script>
+    </head>
+    <body>
+        <img id="img" src="/image/flyimg/"><br>
+        <div id="div" style="background-color: red; width: 50px; height: 50px;">Ok</div>
+    </body>
+</html> 
